@@ -79,6 +79,8 @@ class MainActivity : AppCompatActivity() {
         systemInfoText.text = deviceInfo
     }
 }
+```
+
 ## 5. Testes e Validação
 
 ### Estratégia de Testes:
