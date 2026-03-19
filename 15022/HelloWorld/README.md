@@ -1,8 +1,8 @@
 # Assignment 1 – WeatherApp: Aplicação Meteorológica com Mapa
 Curso: Computação Móvel  
-Aluno: Rafael Falcõa
+Aluno: Rafael Falcão
 Data: 19/03/2026
-URL do Repositório: 
+URL do Repositório: https://github.com/rafa15022/Tutorial1
 
 ---
 
