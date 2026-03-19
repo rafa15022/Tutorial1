@@ -1,0 +1,7 @@
+# Ignorar arquivos de IDE
+.idea/
+*.classpath
+*.project
+*.iml
+*.user
+target/
