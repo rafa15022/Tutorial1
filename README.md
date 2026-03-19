@@ -61,7 +61,7 @@ Clone o repositório e abra o projeto no **Android Studio**.
 
 1. **Clone o Repositório**:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/rafa15022/Tutorial1/
    ```
 2. **Abra no Android Studio**:
 Após clonar o repositório, abra o projeto no Android Studio para visualizar e executar as aplicações Android.
