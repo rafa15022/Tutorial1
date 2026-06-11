@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/weatherImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="601dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/labelPressure"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="425dp"
+        android:gravity="center_vertical"
+        android:text="@string/sea_level_pressure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="608dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="129dp"
+        android:text="@string/update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempValue"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="257dp"
+        android:gravity="center_vertical"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelWindSpeed"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="313dp"
+        android:gravity="center_vertical"
+        android:text="@string/wind_speed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelWindDir"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="369dp"
+        android:gravity="center_vertical"
+        android:text="@string/wind_direction"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editLat"
+        android:textColor="?android:textColor"
+        android:textColorHint="?android:textColor"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="537dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:text="38.76"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pressureValue"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="425dp"
+        android:gravity="center_vertical"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editLon"
+        android:textColor="?android:textColor"
+        android:textColorHint="?android:textColor"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="481dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:text="-9.12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelLon"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="481dp"
+        android:gravity="center_vertical"
+        android:text="@string/longitude"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeValue"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="201dp"
+        android:gravity="center_vertical"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/windDirValue"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="369dp"
+        android:gravity="center_vertical"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelTemp"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="257dp"
+        android:gravity="center_vertical"
+        android:text="@string/temperature"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelTime"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="201dp"
+        android:gravity="center_vertical"
+        android:text="@string/time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/windSpeedValue"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="313dp"
+        android:gravity="center_vertical"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelLat"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="537dp"
+        android:gravity="center_vertical"
+        android:text="@string/latitude"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

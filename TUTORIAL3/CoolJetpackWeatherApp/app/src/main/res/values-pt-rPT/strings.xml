@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Aplicação Meteorológica</string>
+    <string name="app_title">Aplicação Meteorológica</string>
+    <string name="coordinates">Coordenadas</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="update">Atualizar</string>
+    <string name="temperature">Temperatura</string>
+    <string name="wind_speed">Velocidade do vento</string>
+    <string name="wind_direction">Direção do vento</string>
+    <string name="weather_code">Código meteorológico</string>
+    <string name="sea_level_pressure">Pressão ao nível do mar</string>
+    <string name="time">Hora</string>
+    <string name="weather_icon">Ícone meteorológico</string>
+    <string name="weather_error">Não foi possível obter os dados meteorológicos.</string>
+</resources>

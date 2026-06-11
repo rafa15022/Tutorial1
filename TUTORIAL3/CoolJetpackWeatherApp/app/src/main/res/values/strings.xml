@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cool Weather App</string>
+    <string name="app_title">Cool Weather App</string>
+    <string name="coordinates">Coordinates</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="update">Update</string>
+    <string name="temperature">Temperature</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="wind_direction">Wind direction</string>
+    <string name="weather_code">Weather code</string>
+    <string name="sea_level_pressure">Sea level pressure</string>
+    <string name="time">Time</string>
+    <string name="weather_icon">Weather icon</string>
+    <string name="weather_error">Unable to retrieve weather data.</string>
+</resources>
