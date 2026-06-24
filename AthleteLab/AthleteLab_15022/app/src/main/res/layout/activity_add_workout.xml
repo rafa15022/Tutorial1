@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_workout"
+            android:textColor="#111827"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sportSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/dateTimeSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/dateButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/date"
+                android:textAllCaps="false"
+                android:textColor="#0F172A" />
+
+            <Button
+                android:id="@+id/startTimeButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/start_time"
+                android:textAllCaps="false"
+                android:textColor="#0F172A" />
+
+            <Button
+                android:id="@+id/endTimeButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/end_time"
+                android:textAllCaps="false"
+                android:textColor="#0F172A" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/titleInput"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_input"
+            android:hint="@string/workout_title_hint"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:textColor="#111827"
+            android:textColorHint="#64748B" />
+
+        <EditText
+            android:id="@+id/matchResultInput"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="@string/match_result_hint"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:textColor="#111827"
+            android:textColorHint="#64748B"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/exercisesSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/exercisesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exercises"
+                android:textColor="#111827"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/exercisesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <Button
+                android:id="@+id/addExerciseButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#F97316"
+                android:text="@string/add_exercise_plus"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/simpleFieldsSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/field1Input"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_input"
+                android:hint="@string/field_1"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textColor="#111827"
+                android:textColorHint="#64748B" />
+
+            <EditText
+                android:id="@+id/field2Input"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input"
+                android:hint="@string/field_2"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textColor="#111827"
+                android:textColorHint="#64748B" />
+
+            <EditText
+                android:id="@+id/field3Input"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input"
+                android:hint="@string/field_3"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textColor="#111827"
+                android:textColorHint="#64748B" />
+
+            <EditText
+                android:id="@+id/field4Input"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input"
+                android:hint="@string/field_4"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textColor="#111827"
+                android:textColorHint="#64748B" />
+
+            <TextView
+                android:id="@+id/autoResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="#F97316"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/notesInput"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:gravity="top"
+            android:hint="@string/notes"
+            android:padding="14dp"
+            android:textColor="#111827"
+            android:textColorHint="#64748B" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#0F172A"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

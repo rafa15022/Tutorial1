@@ -1,0 +1,22 @@
+# Android / Gradle
+.gradle/
+build/
+*/build/
+.idea/
+*.iml
+
+# Local configs / secrets
+local.properties
+**/local.properties
+**/config.properties
+**/google-services.json
+
+# Keys
+*.jks
+*.keystore
+*.pem
+*.key
+
+# Mac / Windows
+.DS_Store
+Thumbs.db

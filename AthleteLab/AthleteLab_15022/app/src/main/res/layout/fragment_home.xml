@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="28dp" app:cardElevation="5dp" app:cardBackgroundColor="@color/athlete_primary">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp">
+                <TextView android:id="@+id/welcomeText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hello_athlete" android:textColor="#FFFFFF" android:textSize="26sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/sportText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/favorite_sport" android:textColor="#CBD5E1" android:textSize="15sp"/>
+                <ImageView android:id="@+id/sportIcon" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginTop="18dp" android:src="@drawable/ic_dumbell_laranja"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1" app:cardCornerRadius="22dp">
+                <LinearLayout android:padding="16dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"><TextView android:text="@string/workouts_count" android:textColor="@color/text_muted" android:layout_width="wrap_content" android:layout_height="wrap_content"/><TextView android:id="@+id/workoutCountText" android:text="@string/zero" android:textStyle="bold" android:textSize="30sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/></LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <Space android:layout_width="12dp" android:layout_height="1dp"/>
+            <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1" app:cardCornerRadius="22dp">
+                <LinearLayout android:padding="16dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"><TextView android:text="@string/this_week" android:textColor="@color/text_muted" android:layout_width="wrap_content" android:layout_height="wrap_content"/><TextView android:id="@+id/weekProgressText" android:text="0%" android:textStyle="bold" android:textSize="30sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/></LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <TextView android:text="@string/latest_workouts" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_dark" android:layout_marginTop="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/latestWorkoutsRecycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+        <TextView android:text="@string/active_challenges" android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_dark" android:layout_marginTop="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/activeChallengesRecycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+    </LinearLayout>
+</ScrollView>

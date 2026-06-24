@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="athlete_primary">#0F172A</color>
+    <color name="athlete_primary_light">#1E293B</color>
+    <color name="athlete_accent">#FF6B3D</color>
+    <color name="muscle_red">#E53935</color>
+    <color name="football_green">#16A34A</color>
+    <color name="run_blue">#2563EB</color>
+    <color name="run_orange">#F97316</color>
+    <color name="background">#F6F8FB</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="text_dark">#111827</color>
+    <color name="text_muted">#64748B</color>
+</resources>
